@@ -1,4 +1,4 @@
-FROM irinahub/docker-madminer:latest
+FROM madminertool/docker-madminer:latest
 #FROM python:3.6
 
 RUN apt-get update && apt-get -y install vim
