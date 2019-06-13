@@ -1,0 +1,24 @@
+notifications:
+  email:
+    recipients:
+    - iem244@nyu.edu
+sudo: required
+services:
+- docker
+jobs:
+  include:
+  - stage: docker
+    install:
+    - echo none
+    script:
+    - echo none
+    deploy:
+      provider: script
+      script: sh docker_push.sh
+      on:
+        branch: master
+        condition: "$TRAVIS_PULL_REQUEST = false"
+
+env:
+  global:
+  
