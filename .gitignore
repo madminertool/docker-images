@@ -1,5 +1,7 @@
 docker-madminer-physics/MG5_aMC_v2_6_2/
 docker-madminer-physics/patch
+docker-madminer-physics/code/mg_processes
 .gitsecret/keys/random_seed
 secrets.py
 secrets.txt
+container/
